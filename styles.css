@@ -1,0 +1,25 @@
+/* Add this CSS to your existing styles.css file or within the <style> tag in your HTML */
+
+/* Your existing styles */
+
+@media only screen and (max-width: 768px) {
+    /* Apply styles only when the screen width is 768 pixels or less */
+    body {
+      font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+  
+    #navbar {
+      /* Adjust styles for the navigation bar on smaller screens */
+      font-size: 16px;
+      /* Add any additional styles you want to change for smaller screens */
+    }
+  
+    .main-section header {
+      /* Adjust styles for section headers on smaller screens */
+      font-size: 24px;
+      /* Add any additional styles you want to change for smaller screens */
+    }
+  
+    /* Add more styles as needed */
+  }
+  
