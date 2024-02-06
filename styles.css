@@ -75,7 +75,8 @@ nav {
 #navbar ul {
     border: 1px solid;
     height: 207px;
-}}
+}
+}
 
 #navbar ul {
     height: 88%;
@@ -112,7 +113,8 @@ li {
     position: relative;
     margin-left: 0px;
     margin-top: 270px;
-}}
+}
+}
 
 #main-doc {
     position: absolute;
@@ -174,7 +176,6 @@ p{
 .video iframe {
   width: 100%;
 }
-
 
 ol {
   display: block;
