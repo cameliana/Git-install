@@ -1,25 +1,199 @@
-/* Add this CSS to your existing styles.css file or within the <style> tag in your HTML */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/* Your existing styles */
+html, body {
+  min-width: 290px;
+  background-color: #ffffff;
+  line-height: 1.5;
+  /* margin: 0;
+  padding: 0; */
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
 
-@media only screen and (max-width: 768px) {
-    /* Apply styles only when the screen width is 768 pixels or less */
-    body {
-      font-size: 14px; /* Adjust the font size for smaller screens */
-    }
-  
-    #navbar {
-      /* Adjust styles for the navigation bar on smaller screens */
-      font-size: 16px;
-      /* Add any additional styles you want to change for smaller screens */
-    }
-  
-    .main-section header {
-      /* Adjust styles for section headers on smaller screens */
-      font-size: 24px;
-      /* Add any additional styles you want to change for smaller screens */
-    }
-  
-    /* Add more styles as needed */
-  }
-  
+body {
+  display: block;
+  margin: 8px;
+}
+
+@media only screen and (max-width: 815px){
+#navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+}
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    margin: 15px 0 0 10px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+
+nav {
+    display: block;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #1c1e29;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 815px){
+#navbar ul {
+    border: 1px solid;
+    height: 207px;
+}}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#navbar li {
+  color: #262729;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+@media only screen and (max-width: 815px){
+#main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+}}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+h1 {
+  color: black;
+  margin: 15px;
+  text-align: center;
+  font-size:2em;
+  font-weight: thin;
+}
+
+h1 {
+  display: block;
+}
+
+section {
+  display: block;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid; */
+}
+
+#main-doc h2 {
+  text-align: left;
+  margin: 0px;
+}
+
+h2 {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+section p {
+  color: #101011;
+  margin: 15px;
+}
+
+p{
+  display: block;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  color: #101011;
+}
+
+.video {
+  width: 45%; /* Adjust as needed */
+}
+
+.video iframe {
+  width: 100%;
+}
+
+
+ol {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+code {
+  display: block;
+  text-align: left;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #c7c4c4;
+  padding: 15px;
+  border-radius: 5px;
+  width: 600px;
+}
+
+code {
+  font-family: monospace;
+}
