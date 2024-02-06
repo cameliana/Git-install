@@ -4,76 +4,118 @@
     <meta charset="UTF-8">
     <title>Installing Git in Visual Studio Code</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="your-script.js" defer></script>
 </head>
+
 <body>
+  <div id="title">
+    <h1>How to install Git in Visual Studio Code</h1>
+  </div>
+  
+  <div id="navbar">
+    <ul>
+      <li><a class='nav-link' href='#introduction'>Introduction</a></li>
+      <li><a class='nav-link' href='#prerequisites'>Prerequisites</a></li>
+      <li><a class='nav-link' href='#install-git'>Install Git on Your Machine</a></li>
+      <li><a class='nav-link' href='#configure-git'>Configure Git</a></li>
+      <li><a class='nav-link' href='#verify-installation'>Verify Git Installation</a></li>
+      <li><a class='nav-link' href='#basic-commands'>Basic Git Commands in VSCode</a></li>
+      <li><a class='nav-link' href='#git-ignore'>Install gitignore Extension</a></li>
+    </ul>
+  </div>
 
-    <nav id="navbar">
-        <header>Technical Documentation</header>
-        <a class='nav-link' href='#introduction'>Introduction</a>
-        <a class='nav-link' href='#prerequisites'>Prerequisites</a>
-        <a class='nav-link' href='#install-git-extension'>Install Git Extension</a>
-        <a class='nav-link' href='#install-git'>Install Git on Your Machine</a>
-        <a class='nav-link' href='#configure-git'>Configure Git in VSCode</a>
-        <a class='nav-link' href='#verify-installation'>Verify Git Installation</a>
-        <a class='nav-link' href='#basic-commands'>Basic Git Commands in VSCode</a>
-        <a class='nav-link' href='#troubleshooting'>Troubleshooting</a>
-        <a class='nav-link' href='#conclusion'>Conclusion</a>
-        <a class='nav-link' href='#additional-resources'>Additional Resources</a>
-    </nav>
+  <div id="main-doc">
+    <section class='main-section' id='introduction'>
+      <h2>Introduction</h2>
+      <p>Installing Git in Visual Studio Code (VSCode) offers a streamlined and efficient development experience. 
+        This integration provides powerful version control capabilities, allowing developers to effortlessly track changes, 
+        manage branches, and navigate project history within the familiar environment of VSCode.</p>
+      <p>Beyond efficient version control, Git's collaboration features, especially when coupled with platforms like GitHub or GitLab, 
+        enhance teamwork by simplifying conflict resolution and code review processes. Moreover, the direct integration of Git into VSCode 
+        creates a cohesive workflow, allowing developers to perform Git operations seamlessly without leaving their code editor. </p>
+      <p>In essence, the installation of Git in VSCode not only enhances version control but also fosters collaborative and integrated coding 
+        practices for a more productive development environment.</p>
+    </section>
 
-    <main id="main-doc">
+    <section class='main-section' id='prerequisites'>
+      <h2>Prerequisites</h2>
+      <p>Before installing Git in Visual Studio Code, ensure that Visual Studio Code is already installed on your machine. 
+        You can download <a href="https://code.visualstudio.com/" target="_blank">VSCode</a> here.</p>
+      <p>If you don't know how to install VSCode, check out the video below:</p>
+      
+      <p class=" video">
+        <h3>Windows installation</h3>
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/u8APxuCICkA" frameborder="0" allowfullscreen></iframe>
+      </p>
+    
+      <p class=" video">
+        <h3>macOS installation</h3>
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/8CJXB4Nu1wo" frameborder="0" allowfullscreen></iframe>
+      </p>
+    </section>
 
-        <section class='main-section' id='introduction'>
-            <header>Introduction</header>
-            <p>Installing Git in Visual Studio Code (VSCode) offers several key benefits that enhance the development workflow for software projects.</p>
-        </section>
+    <section class='main-section' id='install-git'>
+      <h2>Install Git on Your Machine</h2>
+      <p>To download Git on your computer, follow these simple steps:</p>
+      <ol>
+        <li>Go to the <a href="https://git-scm.com/" target="_blank">official Git website</a></li>
+        <li>On the homepage, you'll find options for different operating systems such as Windows, macOS, or Linux. Select the version that corresponds to your system.</li>
+        <li>Click on the download link, and it will lead you to the installer for your chosen operating system. Download the installer to your computer.</li>
+        <li>Once the download is complete, run the installer executable file. Follow the on-screen instructions to complete the installation.</li>
+        <li>During the installation process, you may be prompted to configure settings such as adjusting the PATH environment. The default settings are generally suitable for most users, but you can customize them as needed.</li>
+      </ol>
+      </p>  
+    </section>
+    
+    <section class='main-section' id='verify-installation'>
+      <h2>Verify Git Installation</h2>
+      <p>After installation, to verify that Git has been successfully installed, open the command prompt or VSCode integrated terminaland type: 
+        <pre>
+          <code>
+  git --version
+  git config --list
+          </code>
+        </pre>
+      </p>
+    </section>
 
-        <section class='main-section' id='prerequisites'>
-            <header>Prerequisites</header>
-            <p>List any prerequisites, such as having Visual Studio Code already installed on the user's machine.</p>
-        </section>
+    <section class='main-section' id='configure-git'>
+      <h2>Configure Git</h2>
+      <p>For users new to Git, it's highly recommended to set up global configurations for their Git identity. In the VSCode integrated terminal, enter the following commands: 
+        <pre>
+          <code>
+  git config --global user.name "Your Name"
+  git config --global user.email "your.email@example.com"
+          </code>
+        </pre></p>
+    </section>
 
-        <section class='main-section' id='install-git-extension'>
-            <header>Install Git Extension</header>
-            <p>Navigate to the Extensions view (Ctrl+Shift+X or Cmd+Shift+X). Search for "Git" in the Extensions view search box. Install the Git extension provided by Microsoft.</p>
-        </section>
+    <section class='main-section' id='basic-commands'>
+      <h2>Basic Git Commands in VSCode</h2>
+      <p>In the world of version control with Git, mastering a few fundamental commands is essential for efficient collaboration and code management within Visual Studio Code's terminal.</p>
+      <p>To initialize a new Git repository in your project, use the command <b>git init</b>. Simply navigate to your project directory 
+        in the VSCode terminal and execute this command.</p>
+      <p>If you're looking to clone an existing repository, the command <b>git clone</b> followed by the repository URL is your go-to. 
+          This retrieves a full copy of the repository onto your local machine.</p>
+      <p>Once you've made changes to your code and are ready to track them, the sequence <b>git add "filename"</b> stages your modifications for commit.</p>
+      <p>Following this, the command <b>git commit -m "Your commit message"</b> records your changes. This two-step process allows you to group 
+            related changes together with a descriptive message. These fundamental commands lay the groundwork for a smooth version control workflow, 
+            helping you track changes, collaborate seamlessly, and maintain a well-organized project history.
+      </p>
+    </section>    
 
-        <section class='main-section' id='install-git'>
-            <header>Install Git on Your Machine</header>
-            <p>Include platform-specific instructions for installing Git on Windows, macOS, or Linux. Provide download links and guidance.</p>
-        </section>
-
-        <section class='main-section' id='configure-git'>
-            <header>Configure Git in VSCode</header>
-            <p>Explain how to configure VSCode to use the installed Git. Optionally, guide users on setting their global Git configuration (name, email).</p>
-        </section>
-
-        <section class='main-section' id='verify-installation'>
-            <header>Verify Git Installation</header>
-            <p>Provide steps to verify that Git is installed and configured correctly. Include commands like git --version and git config --list.</p>
-        </section>
-
-        <section class='main-section' id='basic-commands'>
-            <header>Basic Git Commands in VSCode</header>
-            <p>Introduce a few basic Git commands users can run within the VSCode terminal. Examples: git init, git clone, git add, git commit.</p>
-        </section>
-
-        <section class='main-section' id='troubleshooting'>
-            <header>Troubleshooting</header>
-            <p>Include a troubleshooting section with common issues users might face during the installation process and their solutions.</p>
-        </section>
-
-        <section class='main-section' id='conclusion'>
-            <header>Conclusion</header>
-            <p>Summarize the key points and express the importance of having Git integrated into VSCode for efficient development workflows.</p>
-        </section>
-
-        <section class='main-section' id='additional-resources'>
-            <header>Additional Resources</header>
-            <p>Provide links to additional resources, such as official documentation, Git tutorials, or VSCode guides.</p>
-        </section>
-
-    </main>
+    <section class='main-section' id='git-ignore'>
+      <h2>Install gitignore Extension</h2>
+      <p>In the Extensions search bar, type "Git Ignore" and look for an extension called <b>"Git Ignore" by CodeZombie</b>. 
+        Install this extension by clicking on the Install button next to it. </p>
+      <p>Once installed, you'll need to reload or restart VSCode to activate the Git Ignore extension. After the reload, you can create a 
+        .gitignore file in your project's root directory by right-clicking and selecting "New File" or using the terminal. 
+        Within this file, you can specify files, directories, or patterns that you want Git to ignore.</p>
+      <p>The Git Ignore extension provides helpful suggestions and auto-completions, making it easier to set up exclusion rules. 
+        This step-by-step process ensures a clean and efficient version control system tailored to your project's specific needs.</p>
+    </section>
+    
+  </div>
 
 </body>
 </html>
