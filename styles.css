@@ -8,7 +8,6 @@ html, body {
   padding: 0; */
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.5;
 }
 
 body {
@@ -16,31 +15,27 @@ body {
   margin: 8px;
 }
 
-#title {
-  color: black;
-  margin: 20px 0 20px 80px;
-  text-align: center;
-  font-size:1.3em;
-  font-weight: thin;
-  padding-bottom: 20px;
-}
-
-/* h1 {
-  display: block;
-} */
-
 @media only screen and (max-width: 815px){
 #navbar {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-height: 275px;
-    border: none;
-    z-index: 1;
-    border-bottom: 2px solid;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-height: 275px;
+  border: none;
+  z-index: 1;
+  border-bottom: 2px solid;
+}
+#navbar ul {
+  border: 1px solid;
+  height: 207px;
+}
+#main-doc {
+  position: relative;
+  margin-left: 0px;
+  margin-top: 270px;
 }
 }
 
@@ -52,15 +47,11 @@ body {
     width: 300px;
     height: 100%;
     border-right: solid;
-    margin: 120px 0 0 10px;
+    margin: 30px 0 0 10px;
     line-height: 1.5;
     font-weight: bold;
     font-style: italic;
-    font-size: 18px;
-}
-
-nav {
-    display: block;
+    font-size: 17px;
 }
 
 #navbar a {
@@ -71,21 +62,11 @@ nav {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 815px){
-#navbar ul {
-    border: 1px solid;
-    height: 207px;
-}
-}
-
 #navbar ul {
     height: 88%;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
-}
-
-ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -101,19 +82,8 @@ ul {
   position: relative;
   width: 100%;
   padding: 10px 0;
-}
-
-li {
   display: list-item;
   text-align: -webkit-match-parent;
-}
-
-@media only screen and (max-width: 815px){
-#main-doc {
-    position: relative;
-    margin-left: 0px;
-    margin-top: 270px;
-}
 }
 
 #main-doc {
@@ -123,16 +93,13 @@ li {
     margin-bottom: 110px;
 }
 
-h1 {
+#title {
   color: black;
-  margin: 15px;
+  margin: 20px 0 20px 80px;
   text-align: center;
-  font-size:2em;
+  font-size:1.3em;
   font-weight: thin;
-}
-
-h1 {
-  display: block;
+  padding-bottom: 20px;
 }
 
 section {
@@ -142,24 +109,17 @@ section {
   /* border-bottom: 1px solid; */
 }
 
-#main-doc h2 {
+section h2 {
   text-align: left;
   margin: 0px;
-}
-
-h2 {
   color: black;
   margin: 10px;
-  text-align: center;
   font-size: 1.8em;
 }
 
 section p {
   color: #101011;
   margin: 15px;
-}
-
-p{
   display: block;
 }
 
@@ -170,7 +130,7 @@ p{
 }
 
 .video {
-  width: 45%; /* Adjust as needed */
+  width: 45%;
 }
 
 .video iframe {
@@ -188,9 +148,6 @@ ol {
 }
 section li {
   margin: 15px 0px 0px 20px;
-}
-
-li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
@@ -201,13 +158,10 @@ code {
   position: relative;
   word-break: normal;
   word-wrap: normal;
-  line-height: 2;
+  line-height: 1.5;
   background-color: #c7c4c4;
   padding: 15px;
   border-radius: 5px;
   width: 600px;
-}
-
-code {
   font-family: monospace;
 }
