@@ -40,7 +40,7 @@ body {
 }
 
 #navbar {
-    position: fixed;
+    position: absolute;
     min-width: 290px;
     top: 0px;
     left: 0px;
