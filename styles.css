@@ -15,30 +15,6 @@ body {
   margin: 8px;
 }
 
-@media only screen and (max-width: 815px){
-#navbar {
-  background-color: white;
-  position: absolute;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  max-height: 275px;
-  border: none;
-  z-index: 1;
-  border-bottom: 2px solid;
-}
-#navbar ul {
-  border: 1px solid;
-  height: 207px;
-}
-#main-doc {
-  position: relative;
-  margin-left: 0px;
-  margin-top: 270px;
-}
-}
-
 #navbar {
     position: fixed;
     min-width: 290px;
@@ -165,3 +141,28 @@ code {
   width: 600px;
   font-family: monospace;
 }
+
+
+/* @media only screen and (max-width: 815px){
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+  } */
