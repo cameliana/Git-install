@@ -61,12 +61,10 @@ body {
     margin-bottom: 110px;
 }
 
-#title {
+#title{
   color: black;
-  margin: 20px 0 20px 80px;
   text-align: center;
   font-size:1.3em;
-  font-weight: thin;
   padding-bottom: 20px;
 }
 
@@ -122,6 +120,13 @@ code {
   width: 600px;
   font-family: monospace;
 }
+
+h3{
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+}
+
 
 /* Adjustments for medium-sized screens */
 @media (max-width: 1199px) and (min-width: 769px) {
